@@ -3,17 +3,20 @@ body{
 		padding:none;
 	}
 
-/* Create a sticky/fixed navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
-  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-  position: fixed; /* Sticky/fixed navbar */
-  width: 100%;
-  top: 0; /* At the top */
-  z-index: 99;
+a{
+  text-decoration: none;
 }
+/* header */
+
+#header{
+      height:120px;
+      max-width:100%;
+      background-color:lightblue;
+      color:black;
+      text-align: center;
+      font-weight:bold;
+      font-size:50px;
+    }
 
 span.info{
 		font-weight:lighter;
@@ -21,9 +24,24 @@ span.info{
 		font-size:30px;
 }
 
-/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
-@media screen and (max-width: 580px) {
-  #navbar {
-    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-  }
+/* Main body of the webpage */
+
+#main-body{
+  max-width: 70%;
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 10px 0 30px 0;
+}
+
+.cipher{
+  color: black;
+  text-align: center;
+  padding: 5px;  
+  max-width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  diplay: inline-block;
+}
+.cipher:hover{
+  background-color: lightgreen;
 }
