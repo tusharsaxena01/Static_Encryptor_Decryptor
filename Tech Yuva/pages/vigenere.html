@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Vigenere Cipher</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/pages.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="col-lg-12 bg-light px-5">
+    <h3 class='pt-5 pb-4 text-center text-lg-left'>Vigenere cipher</h3>
+  <p class='lead d-none d-lg-block'><strong>Vigenere Cipher is a method of encrypting alphabetic text. It uses a simple form of polyalphabetic substitution. A polyalphabetic cipher is any cipher based on substitution, using multiple substitution alphabets. The encryption of the original text is done using the Vigenère square or Vigenère table.</strong></p>
+
+    <p class='text-center text-lg-left'>Simply enter a key and encode/decode your message.</p>
+
+  <div class="form-group" id="myDiv">
+	<form id = "chooseCharacters">
+		<input type = "radio" name = "set" checked onclick="changeSet(0)">All Characters<br>
+		<input type = "radio" name = "set" onclick="changeSet(1)">+Punctuation<br>
+		<input type = "radio" name = "set" onclick="changeSet(2)">A-Z & 0-9 ONLY
+	</form>
+	<label class="control-label">Key:</label>
+	<input type="text" id = "keyThing" class="form-control" placeholder = "Your Key" required><br>
+	<input type="text" id = "messageThing" placeholder = "Your&nbsp;Message"><br>
+	<small>*DON'T&nbsp;INPUT&nbsp;NEW&nbsp;LINE</small>
+	<br>
+	<button id="initiateCipher" class="btn btn-success form-control col-lg-6">ENCRYPT / DECRYPT</button>
+	<pre><code id='theOut' class="border border-info rounded"></code></pre>
+</div>
+  <script  src="../js/vigenere.js"></script>
+      <a href="../index.html" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/24/000000/home.png"/>Back To Homepage</a>
+<br>
+<hr>
+</div>
+</body>
+</html>
