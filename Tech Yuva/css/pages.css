@@ -1,0 +1,17 @@
+/* pages css */
+body {
+  font-family: "Helvetica-Neue", Ultra;
+  font-size: 16px;
+  background: linear-gradient(to left, #00d2ff , #3a7bd5);
+}
+
+/* playfair.html */
+#wrapper {
+  background: white;
+  border-radius: 5px;
+  padding: 1.2rem
+}
+.otstup {
+  margin-bottom: 20px;
+}
+
