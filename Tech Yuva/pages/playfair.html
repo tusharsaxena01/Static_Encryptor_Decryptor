@@ -4,34 +4,44 @@
 <head>
 	<title>Playfair Cipher</title>
 	<link rel="stylesheet" href="../css/pages.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script type="text/javascript" src="../js/playfair.js"></script>
 </head>
-<header>
-  <h1 class="text-center">Playfair cipher</h1>
-  <p>The Playfair cipher was the first practical digraph substitution cipher. The scheme was invented in 1854 by Charles Wheatstone but was named after Lord Playfair who promoted the use of the cipher. In playfair cipher unlike traditional cipher we encrypt a pair of alphabets(digraphs) instead of a single alphabet.
-It was used for tactical purposes by British forces in the Second Boer War and in World War I and for the same purpose by the Australians during World War II. This was because Playfair is reasonably fast to use and requires no special equipment.</p>
-</header>
-
-<main class="container">
-  <div class="row">
-    <div id="wrapper" class="col-xs-6 col-xs-4 col-sm-offset-4">
-    <div class="form-group">
-      <label class="control-label">Key word:</label>  
-      <input id="key" type="text" class="form-control" placeholder="Enter key" required>
-      <label class="control-label">Word or string:</label>
-      <input id="String" type="text" class="form-control otstup" placeholder="Enter a word or string">
-      <div>
-        <button class="btn btn-primary form-control" onclick="processKey(), cipher()">Code</button>
+<body>
+  <div class="col-lg-12 bg-light px-5 ">
+    <h3 class='pt-5 pb-4 text-center text-lg-left'>Playfair Cipher</h3>
+    <p class='lead d-none d-lg-block'><strong>This tool encrypts and decrypts messages using the Playfair Cipher, or "Wheatstone Cipher".</strong></p>
+    <p class='d-none d-lg-block'>In playfair cipher unlike traditional cipher we encrypt a pair of alphabets(digraphs) instead of a single alphabet.</p>
+    <p class='text-center text-lg-left'>Simply enter a key and encode/decode your message</p>
+    <hr>
+    <br>
+    <main class="container center">
+      <div class="row">
+        <div id="wrapper" class="col-xs-6 col-xs-4 col-sm-offset-4 col-lg-4">
+          <div class="form-group">
+            <label class="control-label">Key word:</label>  
+            <input id="key" type="text" class="form-control" placeholder="Enter key" required>
+            <label class="control-label">Word or string:</label>
+            <input id="String" type="text" class="form-control otstup" placeholder="Enter a word or string">
+            <div>
+              <button class="btn btn-primary form-control" onclick="processKey(), cipher()">Code</button>
+            </div>
+            <div>
+              <h4 class="text-center" id="printValue"></h4>
+            </div>
+            <div>
+              <button class="btn btn-success form-control" onclick="deCodeCipher()">Decode</button>
+            </div>
+            <div>
+              <h4 class="text-center" id="printDeCode"></h4>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4 class="text-center" id="printValue"></h4>
-      </div>
-      <button class="btn btn-success form-control" onclick="deCodeCipher()">Decode</button>
-    </div>
-      <div>
-        <h4 class="text-center" id="printDeCode"></h4>
-      </div>
-    </div>
+      <br>
+      <a href="../index.html" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/24/000000/home.png"/>Back To Homepage</a>
+      <br>
+    </main>
   </div>
-</main>
+</body>
 </html>
