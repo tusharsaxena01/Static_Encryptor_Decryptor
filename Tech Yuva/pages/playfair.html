@@ -1,0 +1,37 @@
+<!-- Playfair.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Playfair Cipher</title>
+	<link rel="stylesheet" href="../css/pages.css" />
+	<script type="text/javascript" src="../js/playfair.js"></script>
+</head>
+<header>
+  <h1 class="text-center">Playfair cipher</h1>
+  <p>The Playfair cipher was the first practical digraph substitution cipher. The scheme was invented in 1854 by Charles Wheatstone but was named after Lord Playfair who promoted the use of the cipher. In playfair cipher unlike traditional cipher we encrypt a pair of alphabets(digraphs) instead of a single alphabet.
+It was used for tactical purposes by British forces in the Second Boer War and in World War I and for the same purpose by the Australians during World War II. This was because Playfair is reasonably fast to use and requires no special equipment.</p>
+</header>
+
+<main class="container">
+  <div class="row">
+    <div id="wrapper" class="col-xs-6 col-xs-4 col-sm-offset-4">
+    <div class="form-group">
+      <label class="control-label">Key word:</label>  
+      <input id="key" type="text" class="form-control" placeholder="Enter key" required>
+      <label class="control-label">Word or string:</label>
+      <input id="String" type="text" class="form-control otstup" placeholder="Enter a word or string">
+      <div>
+        <button class="btn btn-primary form-control" onclick="processKey(), cipher()">Code</button>
+      </div>
+      <div>
+        <h4 class="text-center" id="printValue"></h4>
+      </div>
+      <button class="btn btn-success form-control" onclick="deCodeCipher()">Decode</button>
+    </div>
+      <div>
+        <h4 class="text-center" id="printDeCode"></h4>
+      </div>
+    </div>
+  </div>
+</main>
+</html>
