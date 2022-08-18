@@ -3,3 +3,11 @@
 
 #### Result
 > *Computer Science 2<sup>nd</sup> YEAR Runner Up*
+
+#### Team Members
+<ul>
+  <li>ABHI SAXENA</li>
+  <li>ABHISHEK GUPTA</li>
+  <li>ASHUTOSH NISHAD</li>
+  <li>SATYAM AGRAWAL</li>
+</ul>
