@@ -1,0 +1,51 @@
+/* pages css */
+body {
+  font-family: "Helvetica-Neue", Ultra;
+  font-size: 16px;
+  background: linear-gradient(to left, #00d2ff , #3a7bd5);
+}
+
+/* playfair.html */
+#wrapper {
+  background: white;
+  border-radius: 5px;
+  padding: 1.2rem
+}
+.otstup {
+  margin-bottom: 20px;
+}
+
+/* rot.html */
+ html, body {
+        height: 100%;
+        max-width: 2000px;
+      }
+      #encode {
+        height: 4rem;
+      }
+      #decode {
+        height: 4rem;
+      }
+
+      @media (max-width: 991.98px) {
+        #sidebar {
+          padding-top: 2rem;
+        }
+      }
+      @media (max-width: 1050px) {
+        #sidebar {
+          padding-top: 2rem;
+        }
+      }
+
+/* vigenere.html */
+#chooseCharacters{
+  float: right;
+}
+#keyThing {
+  height: 20px;
+}
+#theOut {
+  margin: 0;
+  font-size: 2.5em;
+}
